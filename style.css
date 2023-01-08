@@ -1,0 +1,146 @@
+body {
+	background: rgb(248, 249, 249);
+	color: hsl(87, 73%, 3%);
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    
+   
+    
+
+}
+header{
+    grid-area: header;
+    position: sticky;
+    top:0;
+    background: rgb(10, 10, 10);
+    
+    
+}
+#img{
+    
+   max-height: 40px;
+   float: right;
+
+    
+}
+
+h1{
+    grid-area:header; 
+    float: left;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+   ;
+
+}
+main{
+    grid-area:content;
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+    
+}
+div#sidebar{
+    grid-area:sidebar;
+    background-color: rgb(38, 196, 38);
+    width: 20vw;
+    /* height: 100vh; */
+    margin-bottom: 0;
+    
+
+}
+#sidebar>span,#sidebar>div{
+   font-size: large;
+    
+
+}
+#sidebar>p,#sidebar>span{
+    border: 1px;
+    border-style: inset inset inset inset;
+    display: list-item;
+    border-color: black;
+}
+#yourblogs{
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large !important;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+#login:hover{
+   background-color: rgb(245, 248, 245) !important;
+   cursor: pointer;
+}
+#view:hover{
+    background-color: rgb(245, 248, 245) !important;
+    cursor: pointer;
+ }
+ #create:hover{
+    background-color: rgb(245, 248, 245) !important;
+    cursor: pointer;
+ }
+ main>ul>li{
+    /* text-decoration-line: underline;
+    text-decoration-style: solid; */
+    border: 1px solid rgb(24, 81, 240);
+    border-radius: 5px;
+    border-style: double;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    
+
+    
+    
+    
+    
+ }
+ h1:hover{
+    cursor: pointer;
+ }
+ main>ul>li:hover{
+    /* background-color: rgb(122, 121, 121) !important; */
+    cursor: pointer;
+    animation: bounce 1 0.5s linear;
+    animation-fill-mode: forwards;
+    
+ }
+ #t{
+    /* text-decoration-line: underline;
+    text-decoration-style:wavy ; */
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+ }
+ .highlight{
+    font-weight: bolder;
+    font-style: italic;
+    
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    
+ }
+
+ @keyframes bounce {
+   100%{
+      transform: translateY(-20px);
+   }
+ }
+
+
+ 
+ /* input[name="content"]{
+    height: 500px;
+ }
+ input[name="description"]{
+    height:200px;
+ }
+ input{
+    width: 50vw;
+ } */
+

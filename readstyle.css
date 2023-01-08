@@ -1,0 +1,79 @@
+body {
+    display: grid;
+	background: rgb(243, 245, 244);
+	color: hsl(87, 73%, 3%);
+    margin: 0; 
+    grid-template-areas: 
+    "header"
+    "content";
+
+}
+header{
+   
+    position: sticky;
+    grid-area: header;
+    top:0;
+    background: rgb(10, 10, 10)!important;
+    /* height: 10vh;
+    width: 100vw; */
+    
+    
+    
+}
+#img{
+    
+    max-height: 40px;
+    float: right;
+ 
+     
+ }
+ 
+ h1{
+     
+     float: left;
+     color: white;
+     font-size: xx-large;
+     font-weight: bold;
+    ;
+ 
+ }
+ main{
+    grid-area: content;
+ }
+ #commenttag{
+    font-size: x-large;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+ }
+ #listcomments{
+    border: 1px solid rgb(24, 81, 240);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: inline-block;
+ }
+ h1:hover{
+    cursor: pointer;
+ }
+ #loginform{
+   position:absolute;
+   left: 10vw;
+   top: 40vh;
+   border: 1px solid rgb(24, 81, 240);
+    border-radius: 5px;
+    border-style: double;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+ }
+ .textarea{
+   height: 40vh;
+   width: 70vw;
+ }
+ #createblog{
+   font-weight: bolder;
+   font-size: x-large;
+ }
